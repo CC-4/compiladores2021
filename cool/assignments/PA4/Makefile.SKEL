@@ -1,13 +1,33 @@
+##############################
+#    PA4 RISC-V Version     #
+##############################
 
-ASSN = 4
-CLASS= ?
-CLASSDIR= ?
+# useful assignment variables
+ASSN=4
+CLASS=?
+CLASSDIR=?
 
-SRC= CgenClassTable.java CgenNode.java CgenSupport.java TreeConstants.java cool-tree.java IntSymbol.java StringSymbol.java BoolConst.java example.cl README
+# java useful variables
+JAVAC=javac -d .
+JFLAGS=-g -nowarn
+CLASSPATH := ${CLASSDIR}/lib:.:/usr/java/lib/rt.jar
+
+# files that students can modify
+SRC = \
+	CgenNode.java \
+	TreeConstants.java \
+	cool-tree.java \
+	IntSymbol.java \
+	StringSymbol.java \
+	BoolConst.java
+
+# example COOL file
+EXAMPLE = example.cl
+
+# files that students should NOT modify
 CSRC = \
 	ASTConstants.java \
 	ASTLexer.java \
-	ASTParser.java \
 	AbstractSymbol.java \
 	AbstractTable.java \
 	Flags.java \
@@ -21,75 +41,48 @@ CSRC = \
 	SymtabExample.java \
 	TokenConstants.java \
 	TreeNode.java \
-	ClassTable.java \
 	Utilities.java
 
-TSRC= mycoolc cool-tree.aps
-CGEN= 
-LIBS= lexer parser semant
-CFIL= ${CSRC} ${CGEN} CgenClassTable.java CgenNode.java CgenSupport.java TreeConstants.java cool-tree.java IntSymbol.java StringSymbol.java BoolConst.java
-HFIL= 
-LSRC= Makefile
-CLS= ${CFIL:.java=.class}
-OUTPUT= example.output
+TSRC = mycoolc
+LIBS = lexer parser semant
+EXTRA = ASTParser.java ClassTable.java CgenSupport.java CgenClassTable.java
+CFILES = ${CSRC} ${CGEN} ${SRC} ${EXTRA}
+CLS = ${CFILES:.java=.class}
+OUTPUT = example.output
 
-JAVAC := javac
+source: ${SRC} ${TSRC} ${LIBS} ${CSRC} ${EXAMPLE}
 
-# rt.jar yet again
-CLASSPATH := ${CLASSDIR}/lib:.:/usr/java/lib/rt.jar
-
-source: ${SRC} ${TSRC} ${LSRC} ${LIBS} ${CSRC}
-
-${OUTPUT}: cgen
-	@rm -f ${OUTPUT}
-	./mycoolc  example.cl >example.output 2>&1 
-
-cgen: Makefile ${CLS}
+cgen: Makefile ${TSRC} ${LIBS} ${CSRC} ${CLS}
 	@rm -f cgen
 	echo '#!/bin/sh' >> cgen
 	echo 'java -classpath ${CLASSPATH} Cgen $$*' >> cgen
 	chmod 755 cgen
 
-symtab-example: Makefile ${CLS}
-	@rm -f symtab-example
-	echo '#!/bin/sh' >> symtab-example
-	echo 'java -classpath ${CLASSPATH} SymtabExample $$*' >> symtab-example
-	chmod 755 symtab-example
-
-dotest:	cgen example.cl
+dotest: cgen example.cl
 	@echo "\nRunning code generator on example.cl\n"
 	-./mycoolc example.cl
 
 ## cool-tree.class is not a real class file, but we need to have it
 ## for dependency tracking
-${CLS}: ${CFIL}
-	${JAVAC} -g -nowarn -classpath ${CLASSPATH} ${CFIL}
+${CLS}: ${CFILES}
+	${JAVAC} ${JFLAGS} -classpath ${CLASSPATH} ${CFILES}
 	touch cool-tree.class
+
+# SOURCE FILES
+# these dependencies allow you to get the starting files for
+# the assignment. They will not overwrite a file you already have.
+
+${SRC} ${EXAMPLE}:
+	@echo ${SRC}
+	-${CLASSDIR}/etc/copy-skel ${ASSN} ${SRC} ${EXAMPLE}
 
 ${LIBS}:
 	${CLASSDIR}/etc/link-object ${ASSN} $@
 
-# These dependencies allow you to get the starting files for
-# the assignment.  They will not overwrite a file you already have.
-
-${SRC} :								
-	-${CLASSDIR}/etc/copy-skel ${ASSN} ${SRC}
-
-${LSRC} :
-	-${CLASSDIR}/etc/link-shared ${ASSN} ${LSRC}
-
 ${TSRC} ${CSRC}:
 	-ln -s ${CLASSDIR}/src/PA${ASSN}/$@ $@
 
-${HSRC}:
-	-ln -s ${CLASSDIR}/include/PA${ASSN}/$@ $@
+.PHONY: source clean dotest
 
-submit-clean: ${OUTPUT}
-	-rm -f *.s core ${CLS} *~ ${CGEN} parser cgen semant lexer symtab-example
-
-clean :
-	-rm -f ${OUTPUT} *.s core ${CLS} ${CGEN} parser cgen semant lexer symtab-example *~ 
-
-
-
-
+clean:
+	rm -rf ${CSRC} ${TSRC} ${LIBS} cgen *.class *.s

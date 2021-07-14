@@ -1,38 +1,38 @@
-README file for Programming Assignment 3 (Java edition)
+README file for Programming Assignment 2 (Java edition)
 =======================================================
 
 Your directory should now contain the following files:
 
- Makefile		  -> [course dir]/src/PA3J/Makefile
+ Makefile		  -> [course dir]/src/PA2/Makefile
  README
  cool.cup
  bad.cl
  good.cl
- cool-tree.java		  -> [course dir]/src/PA3J/cool-tree.java
- cool-tree.aps		  -> [course dir]/src/PA3J/cool-tree.aps
- AbstractSymbol.java	  -> [course dir]/src/PA3J/AbstractSymbol.java
- AbstractTable.java	  -> [course dir]/src/PA3J/AbstractTable.java
- BoolConst.java		  -> [course dir]/src/PA3J/BoolConst.java
- CgenClassTable.java	  -> [course dir]/src/PA3J/CgenClassTable.java
- CgenNode.java		  -> [course dir]/src/PA3J/CgenNode.java
- CgenSupport.java	  -> [course dir]/src/PA3J/CgenSupport.java
- ClassTable.java	  -> [course dir]/src/PA3J/ClassTable.java
- CoolParser.java	  -> [course dir]/src/PA3J/CoolParser.java
- CoolTokenLexer.java	  -> [course dir]/src/PA3J/CoolTokenLexer.java
- Flags.java		  -> [course dir]/src/PA3J/Flags.java
- IdSymbol.java		  -> [course dir]/src/PA3J/IdSymbol.java
- IdTable.java		  -> [course dir]/src/PA3J/IdTable.java
- IntSymbol.java		  -> [course dir]/src/PA3J/IntSymbol.java
- IntTable.java		  -> [course dir]/src/PA3J/IntTable.java
- ListNode.java		  -> [course dir]/src/PA3J/ListNode.java
- Parser.java		  -> [course dir]/src/PA3J/Parser.java
- StringSymbol.java	  -> [course dir]/src/PA3J/StringSymbol.java
- StringTable.java	  -> [course dir]/src/PA3J/StringTable.java
- SymbolTable.java	  -> [course dir]/src/PA3J/SymbolTable.java
- TokenConstants.java	  -> [course dir]/src/PA3J/TokenConstants.java
- TreeConstants.java	  -> [course dir]/src/PA3J/TreeConstants.java
- TreeNode.java		  -> [course dir]/src/PA3J/TreeNode.java
- Utilities.java		  -> [course dir]/src/PA3J/Utilities.java
+ cool-tree.java		  -> [course dir]/src/PA2/cool-tree.java
+ cool-tree.aps		  -> [course dir]/src/PA2/cool-tree.aps
+ AbstractSymbol.java	  -> [course dir]/src/PA2/AbstractSymbol.java
+ AbstractTable.java	  -> [course dir]/src/PA2/AbstractTable.java
+ BoolConst.java		  -> [course dir]/src/PA2/BoolConst.java
+ CgenClassTable.java	  -> [course dir]/src/PA2/CgenClassTable.java
+ CgenNode.java		  -> [course dir]/src/PA2/CgenNode.java
+ CgenSupport.java	  -> [course dir]/src/PA2/CgenSupport.java
+ ClassTable.java	  -> [course dir]/src/PA2/ClassTable.java
+ CoolParser.java	  -> [course dir]/src/PA2/CoolParser.java
+ CoolTokenLexer.java	  -> [course dir]/src/PA2/CoolTokenLexer.java
+ Flags.java		  -> [course dir]/src/PA2/Flags.java
+ IdSymbol.java		  -> [course dir]/src/PA2/IdSymbol.java
+ IdTable.java		  -> [course dir]/src/PA2/IdTable.java
+ IntSymbol.java		  -> [course dir]/src/PA2/IntSymbol.java
+ IntTable.java		  -> [course dir]/src/PA2/IntTable.java
+ ListNode.java		  -> [course dir]/src/PA2/ListNode.java
+ Parser.java		  -> [course dir]/src/PA2/Parser.java
+ StringSymbol.java	  -> [course dir]/src/PA2/StringSymbol.java
+ StringTable.java	  -> [course dir]/src/PA2/StringTable.java
+ SymbolTable.java	  -> [course dir]/src/PA2/SymbolTable.java
+ TokenConstants.java	  -> [course dir]/src/PA2/TokenConstants.java
+ TreeConstants.java	  -> [course dir]/src/PA2/TreeConstants.java
+ TreeNode.java		  -> [course dir]/src/PA2/TreeNode.java
+ Utilities.java		  -> [course dir]/src/PA2/Utilities.java
  *.java			  other generated files
 
 	The Makefile contains targets for compiling and running your

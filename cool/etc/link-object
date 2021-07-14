@@ -50,6 +50,7 @@ do
    if [ -f $xname ]; then
       ln -s $xname $f
    else
+      echo $COOL_INST
       echo $f is not compiled for $arch
    fi
 done

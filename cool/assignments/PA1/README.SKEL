@@ -1,4 +1,4 @@
-README file for Programming Assignment 2 (Java edition)
+README file for Programming Assignment 1 (Java edition)
 =======================================================
 
 Your directory should now contain the following files:
@@ -7,19 +7,19 @@ Your directory should now contain the following files:
  README
  cool.lex
  test.cl
- AbstractSymbol.java  -> [course dir]/src/PA2J/AbstractSymbol.java
- BoolConst.java       -> [course dir]/src/PA2J/BoolConst.java
- Flags.java           -> [course dir]/src/PA2J/Flags.java
- IdSymbol.java        -> [course dir]/src/PA2J/IdSymbol.java
- IdTable.java         -> [course dir]/src/PA2J/IdTable.java
- IntSymbol.java       -> [course dir]/src/PA2J/IntSymbol.java
- IntTable.java        -> [course dir]/src/PA2J/IntTable.java
- Lexer.java           -> [course dir]/src/PA2J/Lexer.java
- AbstractTable.java   -> [course dir]/src/PA2J/AbstractTable.java
- StringSymbol.java    -> [course dir]/src/PA2J/StringSymbol.java
- StringTable.java     -> [course dir]/src/PA2J/StringTable.java
- Utilities.java       -> [course dir]/src/PA2J/Utilities.java
- TokenConstants.java  -> [course dir]/src/PA2J/TokenConstants.java
+ AbstractSymbol.java  -> [course dir]/src/PA1/AbstractSymbol.java
+ BoolConst.java       -> [course dir]/src/PA1/BoolConst.java
+ Flags.java           -> [course dir]/src/PA1/Flags.java
+ IdSymbol.java        -> [course dir]/src/PA1/IdSymbol.java
+ IdTable.java         -> [course dir]/src/PA1/IdTable.java
+ IntSymbol.java       -> [course dir]/src/PA1/IntSymbol.java
+ IntTable.java        -> [course dir]/src/PA1/IntTable.java
+ Lexer.java           -> [course dir]/src/PA1/Lexer.java
+ AbstractTable.java   -> [course dir]/src/PA1/AbstractTable.java
+ StringSymbol.java    -> [course dir]/src/PA1/StringSymbol.java
+ StringTable.java     -> [course dir]/src/PA1/StringTable.java
+ Utilities.java       -> [course dir]/src/PA1/Utilities.java
+ TokenConstants.java  -> [course dir]/src/PA1/TokenConstants.java
  *.java		      other generated files
 
 	The Makefile contains targets for compiling and running your

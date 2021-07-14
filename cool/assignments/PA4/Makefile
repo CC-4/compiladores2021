@@ -1,14 +1,14 @@
 ##############################
-#    PA5J RISC-V Version     #
+#    PA4 RISC-V Version     #
 ##############################
 
 # useful assignment variables
-ASSN=5J
-CLASS=cs143
-CLASSDIR=/usr/class/cs143/cool
+ASSN=4
+CLASS=cc4
+CLASSDIR=/usr/class/cc4/cool
 
 # java useful variables
-JAVAC=javac
+JAVAC=javac -d .
 JFLAGS=-g -nowarn
 CLASSPATH := ${CLASSDIR}/lib:.:/usr/java/lib/rt.jar
 

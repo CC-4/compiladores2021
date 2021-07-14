@@ -1,34 +1,34 @@
-README file for Programming Assignment 4 (Java edition)
+README file for Programming Assignment 3 (Java edition)
 ======================================================
 
 Your directory should now contain the following files:
 
- ASTConstants.java    -> [class dir]/src/PA4J/ASTConstants.java
- ASTLexer.java	      -> [class dir]/src/PA4J/ASTLexer.java
- ASTParser.java	      -> [class dir]/src/PA4J/ASTParser.java
- AbstractSymbol.java  -> [class dir]/src/PA4J/AbstractSymbol.java
- AbstractTable.java   -> [class dir]/src/PA4J/AbstractTable.java
- BoolConst.java       -> [course dir]/src/PA3J/BoolConst.java
+ ASTConstants.java    -> [class dir]/src/PA3/ASTConstants.java
+ ASTLexer.java	      -> [class dir]/src/PA3/ASTLexer.java
+ ASTParser.java	      -> [class dir]/src/PA3/ASTParser.java
+ AbstractSymbol.java  -> [class dir]/src/PA3/AbstractSymbol.java
+ AbstractTable.java   -> [class dir]/src/PA3/AbstractTable.java
+ BoolConst.java       -> [class dir]/src/PA3/BoolConst.java
  ClassTable.java
- Flags.java	      -> [class dir]/src/PA4J/Flags.java
- IdSymbol.java	      -> [class dir]/src/PA4J/IdSymbol.java
- IdTable.java	      -> [class dir]/src/PA4J/IdTable.java
- IntSymbol.java	      -> [class dir]/src/PA4J/IntSymbol.java
- IntTable.java	      -> [class dir]/src/PA4J/IntTable.java
- ListNode.java	      -> [class dir]/src/PA4J/ListNode.java
- Makefile	      -> [class dir]/etc/../assignments/PA4J/Makefile
+ Flags.java	      -> [class dir]/src/PA3/Flags.java
+ IdSymbol.java	      -> [class dir]/src/PA3/IdSymbol.java
+ IdTable.java	      -> [class dir]/src/PA3/IdTable.java
+ IntSymbol.java	      -> [class dir]/src/PA3/IntSymbol.java
+ IntTable.java	      -> [class dir]/src/PA3/IntTable.java
+ ListNode.java	      -> [class dir]/src/PA3/ListNode.java
+ Makefile	      -> [class dir]/etc/../assignments/PA3/Makefile
  README
- Semant.java	      -> [class dir]/src/PA4J/Semant.java
- StringSymbol.java    -> [class dir]/src/PA4J/StringSymbol.java
- StringTable.java     -> [class dir]/src/PA4J/StringTable.java
- SymbolTable.java     -> [class dir]/src/PA4J/SymbolTable.java
- SymtabExample.java   -> [class dir]/src/PA4J/SymtabExample.java
- TokenConstants.java  -> [class dir]/src/PA4J/TokenConstants.java
+ Semant.java	      -> [class dir]/src/PA3/Semant.java
+ StringSymbol.java    -> [class dir]/src/PA3/StringSymbol.java
+ StringTable.java     -> [class dir]/src/PA3/StringTable.java
+ SymbolTable.java     -> [class dir]/src/PA3/SymbolTable.java
+ SymtabExample.java   -> [class dir]/src/PA3/SymtabExample.java
+ TokenConstants.java  -> [class dir]/src/PA3/TokenConstants.java
  TreeConstants.java
- TreeNode.java	      -> [class dir]/src/PA4J/TreeNode.java
- Utilities.java	      -> [class dir]/src/PA4J/Utilities.java
+ TreeNode.java	      -> [class dir]/src/PA3/TreeNode.java
+ Utilities.java	      -> [class dir]/src/PA3/Utilities.java
  bad.cl
- cool-tree.aps	      -> [class dir]/src/PA4J/cool-tree.aps
+ cool-tree.aps	      -> [class dir]/src/PA3/cool-tree.aps
  cool-tree.java
  good.cl
 

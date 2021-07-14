@@ -40,7 +40,7 @@ LSRC= Makefile
 CLS= ${CFIL:.java=.class}
 OUTPUT= good.output bad.output
 
-JAVAC := javac
+JAVAC := javac -d .
 CUP := ${CLASSDIR}/bin/java_cup
 
 CUPCLASSPATH := ${CLASSDIR}/lib

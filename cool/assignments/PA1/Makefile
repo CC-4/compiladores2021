@@ -30,7 +30,7 @@ OUTPUT= test.output
 
 CUPCLASSPATH := ${CLASSDIR}/lib/java-cup-11a.jar:${CLASSDIR}/lib/jlex.jar
 
-JAVAC := javac
+JAVAC := javac -d .
 JLEX := java -classpath ${CLASSDIR}/lib/jlex.jar JLex.Main
 
 # sm: we need rt.jar on Solaris/x86, and I'm hoping it won't

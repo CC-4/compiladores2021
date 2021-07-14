@@ -35,7 +35,7 @@ LSRC= Makefile
 CLS= ${CFIL:.java=.class}
 OUTPUT= good.output bad.output
 
-JAVAC := javac
+JAVAC := javac -d .
 
 # rt.jar yet again
 CLASSPATH := ${CLASSDIR}/lib:.:/usr/java/lib/rt.jar
